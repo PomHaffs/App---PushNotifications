@@ -35,6 +35,7 @@
 		A233E70CA8622FB02C8C8C14 /* Pods-PushNotifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifications.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushNotifications/Pods-PushNotifications.debug.xcconfig"; sourceTree = "<group>"; };
 		C076EF3CD4082E5F8B71C090 /* Pods-PushNotificationsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotificationsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushNotificationsTests/Pods-PushNotificationsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC2B665C73411042A5D3B3D8 /* Pods-PushNotifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifications.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushNotifications/Pods-PushNotifications.release.xcconfig"; sourceTree = "<group>"; };
+		FE38DF341DE6B8D5009F2F33 /* PushNotifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotifications.entitlements; sourceTree = "<group>"; };
 		FEEAD5541DE6ADBC0012071A /* PushNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEEAD5571DE6ADBC0012071A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEEAD5591DE6ADBC0012071A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		FEEAD5561DE6ADBC0012071A /* PushNotifications */ = {
 			isa = PBXGroup;
 			children = (
+				FE38DF341DE6B8D5009F2F33 /* PushNotifications.entitlements */,
 				FEEAD5571DE6ADBC0012071A /* AppDelegate.swift */,
 				FEEAD5591DE6ADBC0012071A /* ViewController.swift */,
 				FEEAD55B1DE6ADBC0012071A /* Main.storyboard */,
@@ -189,6 +191,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 37N4597A88;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					FEEAD5671DE6ADBC0012071A = {
 						CreatedOnToolsVersion = 8.1;
@@ -477,6 +484,7 @@
 			baseConfigurationReference = A233E70CA8622FB02C8C8C14 /* Pods-PushNotifications.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushNotifications/PushNotifications.entitlements;
 				DEVELOPMENT_TEAM = 37N4597A88;
 				INFOPLIST_FILE = PushNotifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -491,6 +499,7 @@
 			baseConfigurationReference = CC2B665C73411042A5D3B3D8 /* Pods-PushNotifications.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushNotifications/PushNotifications.entitlements;
 				DEVELOPMENT_TEAM = 37N4597A88;
 				INFOPLIST_FILE = PushNotifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
