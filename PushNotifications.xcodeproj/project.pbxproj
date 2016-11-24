@@ -487,6 +487,7 @@
 				CODE_SIGN_ENTITLEMENTS = PushNotifications/PushNotifications.entitlements;
 				DEVELOPMENT_TEAM = 37N4597A88;
 				INFOPLIST_FILE = PushNotifications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PomHaffs.PushNotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,6 +503,7 @@
 				CODE_SIGN_ENTITLEMENTS = PushNotifications/PushNotifications.entitlements;
 				DEVELOPMENT_TEAM = 37N4597A88;
 				INFOPLIST_FILE = PushNotifications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PomHaffs.PushNotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";

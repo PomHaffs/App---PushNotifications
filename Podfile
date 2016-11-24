@@ -7,6 +7,7 @@ target 'PushNotifications' do
 
   # Pods for PushNotifications
   pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
 
   target 'PushNotificationsTests' do
     inherit! :search_paths
